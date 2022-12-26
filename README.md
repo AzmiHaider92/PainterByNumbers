@@ -37,8 +37,8 @@ Nevertheless, my code has the two approaches and can be switched with a simple f
 
 # The architechture:
 The input image is of size 256x256x3.  
-The shared CNN consists of 5 convolutional blocks, the sizes of the images after each block is shown below.  
-The number of conv2d in each block is marked below each block in conv2d-xN. Each conv2d is followed by a batchNorm and a relu activation.
+The shared CNN consists of 5 convolutional blocks, each block is followed by a maxpool(2) - the sizes of the images after each block is shown below.  
+The number of conv2d in each block is marked below each block in conv2d-xN. Each conv2d is followed by a BatchNorm and a Relu activation.
 
 <p align="center">
   <img src="photos/Picture3.png" width="1000"/>

@@ -11,5 +11,6 @@ Given two paintings, my network decides how similar their styles are
 <p float="left">
   <img src="photos/n-3861-00-000045-hd.jpg" height="300" />
   <img src="photos/self-portrait.jpg" height="300"/> 
+  <img src="photos/Jeun-Fille-Endormie-by-Picasso.jpg" height="300"/>
 </p>
   

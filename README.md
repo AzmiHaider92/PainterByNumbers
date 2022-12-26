@@ -8,3 +8,8 @@ The goal of the competition is to build a network that learns artists' painting 
 Given two paintings, my network decides how similar their styles are
 
 ![Alt text](photos/n-3861-00-000045-hd.jpg "painting1")   ![Alt text](photos/self-portrait.jpg "painting2")
+<img
+  src="photos/n-3861-00-000045-hd.jpg"
+  alt="Alt text"
+  title="painting1"
+  style="display: inline-block; margin: 0 auto; max-height: 300px">

@@ -15,7 +15,6 @@ Example: left and middle paintings are Van Gogh's, while the right painting is P
   
 
 
-aa
 # Approach: Siamese CNN network with triplet loss
 Siamese CNN consists of three Convolutional Neural Networks where **weights re shared** between the CNNs.
 Basically, first input goes through the CNN to produce a feature vector, then the second and the third go throught the same CNN.  
@@ -31,9 +30,11 @@ The aim of the network is to make feature vectors of paintings of same artists' 
 </p>
 
 
-**Note**: I've also exprimented with two CNNs (instead of three, still with **shared weight** between the two CNNs). For this, a contrastive loss was used.
-In this network, two paintings of different artists are given and the goal is to push their feature vectors far from each other. 
-I think the triplet approach is much stronger as it does what the 
+**Contrastive network**: I've also exprimented with two CNNs (instead of three, still with **shared weight** between the two CNNs). For this, a contrastive loss was used. In this network, two paintings of different artists are given and the goal is to push their feature vectors far from each other. 
+I think the triplet approach is much stronger as it does what the contrastive approach does and more. 
+Nevertheless, my code has the two approaches and can be switched with a simple flag **pair_triplet** ( False=contrastive ; True=Triplet). 
+.
+
 
 # The loss:
-I tried two different losses
+

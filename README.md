@@ -6,7 +6,9 @@ This is my solution to the Kaggle competition PainterByNumbers: https://www.kagg
 
 The goal of the competition is to build a network that learns artists' painting style. 
 
-Example: left and middle paintings are Van Gogh's, while the right painting is Picasso's.   
+Example: left and middle paintings are Van Gogh's, while the right painting is Picasso's.
+The network generates three feature vectors for the paintings were the first two are closer to each other than to the third.
+
 <p align="center">
   <img src="photos/n-3861-00-000045-hd.jpg" height="250" />
   <img src="photos/self-portrait.jpg" height="250"/> 

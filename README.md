@@ -44,8 +44,9 @@ The shared CNN consists of 5 convolutional blocks, each block is followed by a m
 <p align="center">
   <img src="photos/Picture3.png" width="1000"/>
 </p>
-
 (the architecture figure was drawn with this online tool: http://alexlenail.me/NN-SVG/LeNet.html)
+
+
 
 
 # The loss:

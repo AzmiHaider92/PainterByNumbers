@@ -30,10 +30,13 @@ The aim of the network is to make feature vectors of paintings of same artists' 
 </p>
 
 
-**Contrastive network**: I've also exprimented with two CNNs (instead of three, still with **shared weight** between the two CNNs). For this, a contrastive loss was used. In this network, two paintings of different artists are given and the goal is to push their feature vectors far from each other. 
+**Contrastive network**: I've also exprimented with two CNNs (instead of three, still with **shared weight** between the two CNNs). For this, a contrastive loss was used. In this network, two paintings and a label are given and the goal is to push their feature vectors closer if the label=0 (paintings are from the same artist) or push ehir feature vectors far from each other incase the label=1 (paintings are from different artists). 
 I think the triplet approach is much stronger as it does what the contrastive approach does and more. 
 Nevertheless, my code has the two approaches and can be switched with a simple flag **pair_triplet** ( False=contrastive ; True=Triplet). 
 .
+**Note:**  
+The artists and paintings in each step are all randomly chosen.
+
 
 # The architechture:
 The input image is of size 256x256x3.  
@@ -48,11 +51,16 @@ The shared CNN consists of 5 convolutional blocks, each block is followed by a m
 
 # The loss:
 **Triplet loss:**  
-The aim of the triplet loss is to push feature vectors of Anchor and Positive paintings closer to each other pushing them away from the feature vector of the Negative painting.
+The aim of the triplet loss is to push feature vectors of Anchor and Positive paintings closer to each other pushing them away from the feature vector of the Negative painting. (A default margin=2).
 
 <p align="center">
   <img src="photos/tripletloss.jpg" width="600"/>
 </p>
 
 
+**Contrastive loss:**
+As mentioned above, I've expiremented with a two CNN arhictecture where only two paintings and a label Y are handled. The aim is to push their feature vectors closer if the label Y=0 or push them apart if Y=1.
+<p align="center">
+  <img src="photos/Contrastiveloss.jpg" width="600"/>
+</p>
 

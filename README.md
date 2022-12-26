@@ -40,7 +40,7 @@ The input image is of size 256x256x3.
 The shared CNN consists of 5 convolutional blocks, the sizes of the images after each block is shown below. the number of conv2d in each block is marked below each block in conv2d-xN.
 
 <p align="center">
-  <img src="photos/Picture3.png" width="600"/>
+  <img src="photos/Picture3.png" height="400"/>
 </p>
 
 # The loss:

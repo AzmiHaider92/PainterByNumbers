@@ -8,9 +8,9 @@ The goal of the competition is to build a network that learns artists' painting 
 
 Example: left and middle paintings are Van Gogh's, while the right painting is Picasso's.   
 <p align="center">
-  <img src="photos/n-3861-00-000045-hd.jpg" height="300" />
-  <img src="photos/self-portrait.jpg" height="300"/> 
-  <img src="photos/Jeun-Fille-Endormie-by-Picasso.jpg" height="300"/>
+  <img src="photos/n-3861-00-000045-hd.jpg" height="250" />
+  <img src="photos/self-portrait.jpg" height="250"/> 
+  <img src="photos/Jeun-Fille-Endormie-by-Picasso.jpg" height="250"/>
 </p>
   
 

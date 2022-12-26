@@ -58,9 +58,9 @@ The aim of the triplet loss is to push feature vectors of Anchor and Positive pa
 </p>
 
 
-**Contrastive loss:**
+**Contrastive loss:**  
 As mentioned above, I've expiremented with a two CNN arhictecture where only two paintings and a label Y are handled. The aim is to push their feature vectors closer if the label Y=0 or push them apart if Y=1.
 <p align="center">
-  <img src="photos/Contrastiveloss.jpg" width="600"/>
+  <img src="photos/Contrastiveloss.jpg" width="800"/>
 </p>
 

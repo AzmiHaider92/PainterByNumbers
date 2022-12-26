@@ -105,3 +105,8 @@ Number of paintings in the test set: 22237
 **Note: the model was trained on a machine with 4 GPUs and Data parellelism (using nn.DataParallel).**  
 **Number of workers = 8**  
 **Training took 4 hours.**  
+
+
+# Results:
+
+TODO: add graphs

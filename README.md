@@ -21,4 +21,3 @@ Example: left and middle paintings are Van Gogh's, while the right painting is P
 <p float="left">
   <img src="0_SszXblCjQOPiLhjZ.png" width="600" />
 </p>
-0_SszXblCjQOPiLhjZ.png

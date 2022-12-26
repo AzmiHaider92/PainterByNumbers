@@ -6,7 +6,6 @@ This is my solution to the Kaggle competition PainterByNumbers: https://www.kagg
 
 The goal of the competition is to build a network that learns artists' painting style. 
 
-The network is built to generate feature vectors for painting in a way that paintings of same artists' feature vectors are closer to each other than feature vectors of paintings of different artists.  
 Example: left and middle paintings are Van Gogh's, while the right painting is Picasso's.   
 <p align="center">
   <img src="photos/n-3861-00-000045-hd.jpg" height="300" />
@@ -16,10 +15,25 @@ Example: left and middle paintings are Van Gogh's, while the right painting is P
   
 
 
-
+aa
 # Approach: Siamese CNN network with triplet loss
+Siamese CNN consists of three Convolutional Neural Networks where **weights re shared** between the CNNs.
+Basically, first input goes through the CNN to produce a feature vector, then the second and the third go throught the same CNN.  
+The fist image we term Anchor, this painting belongs to artist1.   
+The second image we term Positive, it is a **different** painting of the **same** artist1.
+The third image we term Negative is a painting of a **different** artist2.  
+The loss is then calculated on the three feature vectors.  
 
+The aim of the network is to make feature vectors of paintings of same artists' closer to each other while feature vectors of paintings of different artists are pushed away.  
 
 <p align="center">
   <img src="photos/0_SszXblCjQOPiLhjZ.png" width="600"/>
 </p>
+
+
+**Note**: I've also exprimented with two CNNs (instead of three, still with **shared weight** between the two CNNs). For this, a contrastive loss was used.
+In this network, two paintings of different artists are given and the goal is to push their feature vectors far from each other. 
+I think the triplet approach is much stronger as it does what the 
+
+# The loss:
+I tried two different losses

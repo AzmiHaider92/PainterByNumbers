@@ -14,3 +14,11 @@ Example: left and middle paintings are Van Gogh's, while the right painting is P
   <img src="photos/Jeun-Fille-Endormie-by-Picasso.jpg" height="300"/>
 </p>
   
+
+**Approach: Siamese CNN network.**
+
+
+<p float="left">
+  <img src="0_SszXblCjQOPiLhjZ.png" width="600" />
+</p>
+0_SszXblCjQOPiLhjZ.png

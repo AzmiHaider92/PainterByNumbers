@@ -15,27 +15,28 @@ Example: left and middle paintings are Van Gogh's, while the right painting is P
   
 
 
-# Approach: Siamese CNN network with triplet loss
-Siamese CNN consists of three Convolutional Neural Networks where **weights are shared** between the CNNs.  
-Basically, first input goes through the CNN to produce a feature vector, then the second and the third go throught the same CNN.    
+# Approach: Siamese CNN network with triplet approach
+Siamese CNN consists of three (or two incase of contrastive approach) Convolutional Neural Networks where **weights are shared** between the CNNs.  
+First input goes through the CNN to produce a feature vector, then the second and the third go throught the **same** CNN.    
 The fist image we term Anchor, this painting belongs to artist1.     
 The second image we term Positive, it is a **different** painting of the **same** artist1.  
 The third image we term Negative is a painting of a **different** artist2.    
-The loss is then calculated on the three feature vectors.    
+**Note: The two artists and paintings in each step are all randomly chosen.**  
 
+The loss is then calculated on the three feature vectors produced and gradients are calculated aon shared weights.  
 The aim of the network is to make feature vectors of paintings of same artists' closer to each other while feature vectors of paintings of different artists are pushed away.  
 
 <p align="center">
   <img src="photos/0_SszXblCjQOPiLhjZ.png" width="600"/>
 </p>
 
+  
+  
+**Contrastive network**: I've also exprimented with two CNNs (instead of three, still with **shared weight** between the two CNNs). For this, a contrastive loss was used. In this network, two paintings and a label are given and the goal is to push their feature vectors closer if the label=0 (paintings are from the same artist) or push ehir feature vectors far from each other incase the label=1 (paintings are from different artists).   
+In each step, we first randomly choose label=(0,1) and then randomly choose paintings based on the label (if label=0 we randomly choose an artist, then randomly choose two of his paintings. If label=1, we randomly choose 2 artits and randomly choose a painting of each of them). The label is saved with the pair (see contrastive loss below).  
 
-**Contrastive network**: I've also exprimented with two CNNs (instead of three, still with **shared weight** between the two CNNs). For this, a contrastive loss was used. In this network, two paintings and a label are given and the goal is to push their feature vectors closer if the label=0 (paintings are from the same artist) or push ehir feature vectors far from each other incase the label=1 (paintings are from different artists). 
-.
-**Note:**  
-The artists and paintings in each step are all randomly chosen.
-
-
+  
+  
 
 # The architechture:
 The input image is of size 256x256x3.  
@@ -46,9 +47,9 @@ The shared CNN consists of 5 convolutional blocks, each block is followed by a m
 </p>
 (the architecture figure was drawn with this online tool: http://alexlenail.me/NN-SVG/LeNet.html)
 
-
-
-
+  
+  
+  
 # The loss:
 **Triplet loss:**  
 The aim of the triplet loss is to push feature vectors of Anchor and Positive paintings closer to each other pushing them away from the feature vector of the Negative painting. (A default margin=2).

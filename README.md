@@ -83,6 +83,8 @@ The number of paintings per artist are different and shown below (ordered):
   <img src="photos/NumberOfPaintingsPerArtist.jpg" width="800"/>
 </p>
 
-
-
+  
+Number of paintings in training set: 73183  
+Number of paintings in validation set: 7083  
+Number of paintings in the test set: 22237
 

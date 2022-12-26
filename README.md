@@ -9,18 +9,7 @@ Given two paintings, my network decides how similar their styles are
 
 
 <p float="left">
-  <img src="photos/n-3861-00-000045-hd.jpg" height="100" />
-  <img src="photos/self-portrait.jpg" height="100"/> 
+  <img src="photos/n-3861-00-000045-hd.jpg" height="300" />
+  <img src="photos/self-portrait.jpg" height="300"/> 
 </p>
   
-<img
-  src="photos/n-3861-00-000045-hd.jpg"
-  alt="Alt text"
-  title="painting1"
-  style="display: inline-block; margin: 0 auto; max-height: 150px">
-  
-<img
-  src="photos/self-portrait.jpg"
-  alt="Alt text"
-  title="painting2"
-  style="display: inline-block; margin: 0 auto; max-height: 300px">

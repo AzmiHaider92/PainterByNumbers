@@ -17,8 +17,8 @@ The network generates three feature vectors for the paintings were the first two
   
 
 
-# Approach: Siamese CNN network with triplet approach
-Siamese CNN consists of three (or two incase of contrastive approach) Convolutional Neural Networks where **weights are shared** between the CNNs.  
+# Approach: Siamese CNN network with triplet loss
+Siamese CNN consists of three Convolutional Neural Networks where **weights are shared** between the CNNs.  
 First input goes through the CNN to produce a feature vector, then the second and the third go throught the **same** CNN.    
 The fist image we term Anchor, this painting belongs to artist1.     
 The second image we term Positive, it is a **different** painting of the **same** artist1.  

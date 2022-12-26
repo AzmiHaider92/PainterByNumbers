@@ -16,12 +16,12 @@ Example: left and middle paintings are Van Gogh's, while the right painting is P
 
 
 # Approach: Siamese CNN network with triplet loss
-Siamese CNN consists of three Convolutional Neural Networks where **weights re shared** between the CNNs.
-Basically, first input goes through the CNN to produce a feature vector, then the second and the third go throught the same CNN.  
-The fist image we term Anchor, this painting belongs to artist1.   
-The second image we term Positive, it is a **different** painting of the **same** artist1.
-The third image we term Negative is a painting of a **different** artist2.  
-The loss is then calculated on the three feature vectors.  
+Siamese CNN consists of three Convolutional Neural Networks where **weights re shared** between the CNNs.  
+Basically, first input goes through the CNN to produce a feature vector, then the second and the third go throught the same CNN.    
+The fist image we term Anchor, this painting belongs to artist1.     
+The second image we term Positive, it is a **different** painting of the **same** artist1.  
+The third image we term Negative is a painting of a **different** artist2.    
+The loss is then calculated on the three feature vectors.    
 
 The aim of the network is to make feature vectors of paintings of same artists' closer to each other while feature vectors of paintings of different artists are pushed away.  
 

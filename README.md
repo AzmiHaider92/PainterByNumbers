@@ -38,7 +38,7 @@ In each step, we first randomly choose label=(0,1) and then randomly choose pain
   
   
 
-# The architechture:
+# The architechture
 The input image is of size 256x256x3.  
 The shared CNN consists of 5 convolutional blocks, each block is followed by a maxpool(2) - the sizes of the images after each block is shown below. The number of conv2d in each block is marked below each block in conv2d-xN. Each conv2d is followed by a BatchNorm and a Relu activation. The output feature vector is of size 2048.
 
@@ -71,7 +71,7 @@ As mentioned above, I've expiremented with a two CNN arhictecture where only two
 **Nevertheless, my code has the two approaches and can be switched with a simple flag *pair_triplet* ( False=contrastive ; True=Triplet).**  
 
 
-# Data cleaning and preprocessing:
+# Data cleaning and preprocessing
 First, I've divided the paintings to classes based on artists. Then eliminated artists who had only one painting, this was done after noticing that some classes (artists) are not even artists (they had names of paintings) - it is clearly a mistake in data collection.  
 After cleaning, the dataset has 1701 artists, each with at least two paintings.  
 Second, the dataset artists were divided to **training** (80% - 1352 painters) and **test** (20% - 349 painters).        
@@ -95,7 +95,7 @@ Number of paintings in the test set: 22237
 </p>
 
 
-# Training Parameters:
+# Training Parameters
 
 **Optimizer = Adam with a learning rate=0.0001**  
 **Epochs = 20**  
@@ -107,6 +107,9 @@ Number of paintings in the test set: 22237
 **Training took 4 hours.**  
 
 
-# Results:
+# Results
 
 TODO: add graphs
+
+
+# Conclusion

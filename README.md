@@ -23,7 +23,7 @@ The second image we term Positive, it is a **different** painting of the **same*
 The third image we term Negative is a painting of a **different** artist2.    
 **Note: The two artists and paintings in each step are all randomly chosen.**  
 
-The loss is then calculated on the three feature vectors produced and gradients are calculated aon shared weights.  
+The triplet loss (explained in loss section) is then calculated on the three feature vectors produced and gradients are calculated aon shared weights.  
 The final result of the network is a feature space where feature vectors of paintings of same artist are closer to each other while feature vectors of paintings of different artists are pushed away.  
 
 <p align="center">

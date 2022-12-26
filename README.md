@@ -88,3 +88,8 @@ Number of paintings in training set: 73183
 Number of paintings in validation set: 7083  
 Number of paintings in the test set: 22237
 
+**A triplet sample from training:**  
+<p align="center">
+  <img src="photos/sample.jpg" width="600"/>
+</p>
+

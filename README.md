@@ -2,7 +2,7 @@
 
 Hello all,
 
-This is a solution to the Kaggle competition PainterByNumbers: https://www.kaggle.com/c/painter-by-numbers
+This is my solution to the Kaggle competition PainterByNumbers: https://www.kaggle.com/c/painter-by-numbers
 
 The goal of the competition is to build a network that learns artists' painting style.
 Example: left and middle painting are Van Gogh's, the right painting is Picasso's. 

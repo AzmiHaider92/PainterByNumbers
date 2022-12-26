@@ -65,7 +65,7 @@ As mentioned above, I've expiremented with a two CNN arhictecture where only two
   <img src="photos/Contrastiveloss.jpg" width="700"/>
 </p>
 
-**Notes:**
+**Notes:**  
 **Euclidean distance was used in both losses trials.**  
 **I think the triplet approach is much stronger as it does what the contrastive approach does and more.**   
 **Nevertheless, my code has the two approaches and can be switched with a simple flag *pair_triplet* ( False=contrastive ; True=Triplet).**  

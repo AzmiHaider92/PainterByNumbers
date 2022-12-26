@@ -15,9 +15,11 @@ Example: left and middle paintings are Van Gogh's, while the right painting is P
 </p>
   
 
-**Approach: Siamese CNN network.**
+
+
+# Approach: Siamese CNN network with triplet loss
 
 
 <p float="middle">
-  <img src="0_SszXblCjQOPiLhjZ.png" width="600"/>
+  <img src="0_SszXblCjQOPiLhjZ.png" height="600"/>
 </p>

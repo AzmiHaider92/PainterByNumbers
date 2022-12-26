@@ -72,14 +72,15 @@ As mentioned above, I've expiremented with a two CNN arhictecture where only two
 
 # Data cleaning and preprocessing:
 First, I've divided the paintings to classes based on artists. Then eliminated artists who had only one painting, this was done after noticing that some classes (artists) are not even artists (they had names of paintings) - it is clearly a mistake in data collection.  
-After cleaning, the dataset has 1701 artists, each with at least two paintings.
-Second, the dataset artists were divided to **training** (80%) and **test** (20%). A fraction (10%) from training paintings was saved for **validation**.    
-**The test set has only artists not seen in training (not one painting of theirs)!**  
+After cleaning, the dataset has 1701 artists, each with at least two paintings.  
+Second, the dataset artists were divided to **training** (80% - 1352 painters) and **test** (20% - 349 painters).        
+A fraction (10%) from training **paintings** was saved for **validation**.  
+**The test set has only artists not seen in training (not one painting of theirs)!**   
 **The validation set has paintings not seen in training, but the artists who painted them are in the training.**  
 
 The number of paintings per artist are different and shown below (ordered):  
 <p align="center">
-  <img src="photos/NumberOfPaintingsPerArtist.jpg" width="600"/>
+  <img src="photos/NumberOfPaintingsPerArtist.jpg" width="800"/>
 </p>
 
 

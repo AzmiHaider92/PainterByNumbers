@@ -16,7 +16,7 @@ Example: left and middle paintings are Van Gogh's, while the right painting is P
 
 
 # Approach: Siamese CNN network with triplet loss
-Siamese CNN consists of three Convolutional Neural Networks where **weights re shared** between the CNNs.  
+Siamese CNN consists of three Convolutional Neural Networks where **weights are shared** between the CNNs.  
 Basically, first input goes through the CNN to produce a feature vector, then the second and the third go throught the same CNN.    
 The fist image we term Anchor, this painting belongs to artist1.     
 The second image we term Positive, it is a **different** painting of the **same** artist1.  
@@ -35,6 +35,14 @@ I think the triplet approach is much stronger as it does what the contrastive ap
 Nevertheless, my code has the two approaches and can be switched with a simple flag **pair_triplet** ( False=contrastive ; True=Triplet). 
 .
 
+# The architechture:
+The input image is of size 256x256x3.  
+The shared CNN consists of 5 convolutional blocks, the sizes of the images after each block is shown below. the number of conv2d in each block is marked below each block in conv2d-xN.
+
+<p align="center">
+  <img src="photos/Picture3.png" width="600"/>
+</p>
 
 # The loss:
+**Triplet loss:**  
 

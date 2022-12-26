@@ -51,7 +51,7 @@ The shared CNN consists of 5 convolutional blocks, each block is followed by a m
 The aim of the triplet loss is to push feature vectors of Anchor and Positive paintings closer to each other pushing them away from the feature vector of the Negative painting.
 
 <p align="center">
-  <img src="photos/tripletloss.jpeg" width="600"/>
+  <img src="photos/tripletloss.jpg" width="600"/>
 </p>
 
 

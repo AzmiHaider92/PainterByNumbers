@@ -31,11 +31,10 @@ The aim of the network is to make feature vectors of paintings of same artists' 
 
 
 **Contrastive network**: I've also exprimented with two CNNs (instead of three, still with **shared weight** between the two CNNs). For this, a contrastive loss was used. In this network, two paintings and a label are given and the goal is to push their feature vectors closer if the label=0 (paintings are from the same artist) or push ehir feature vectors far from each other incase the label=1 (paintings are from different artists). 
-I think the triplet approach is much stronger as it does what the contrastive approach does and more. 
-Nevertheless, my code has the two approaches and can be switched with a simple flag **pair_triplet** ( False=contrastive ; True=Triplet). 
 .
 **Note:**  
 The artists and paintings in each step are all randomly chosen.
+
 
 
 # The architechture:
@@ -64,3 +63,6 @@ As mentioned above, I've expiremented with a two CNN arhictecture where only two
   <img src="photos/Contrastiveloss.jpg" width="700"/>
 </p>
 
+
+**I think the triplet approach is much stronger as it does what the contrastive approach does and more.**   
+**Nevertheless, my code has the two approaches and can be switched with a simple flag *pair_triplet* ( False=contrastive ; True=Triplet).**

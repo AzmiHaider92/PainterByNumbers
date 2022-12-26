@@ -37,8 +37,7 @@ Nevertheless, my code has the two approaches and can be switched with a simple f
 
 # The architechture:
 The input image is of size 256x256x3.  
-The shared CNN consists of 5 convolutional blocks, each block is followed by a maxpool(2) - the sizes of the images after each block is shown below.  
-The number of conv2d in each block is marked below each block in conv2d-xN. Each conv2d is followed by a BatchNorm and a Relu activation.
+The shared CNN consists of 5 convolutional blocks, each block is followed by a maxpool(2) - the sizes of the images after each block is shown below. The number of conv2d in each block is marked below each block in conv2d-xN. Each conv2d is followed by a BatchNorm and a Relu activation. The output feature vector is of size 2048.
 
 <p align="center">
   <img src="photos/Picture3.png" width="1000"/>
@@ -46,4 +45,5 @@ The number of conv2d in each block is marked below each block in conv2d-xN. Each
 
 # The loss:
 **Triplet loss:**  
+The aim of the triplet loss is to push feature vectors of Anchor and Positive closer to each other pushing them away from the feature vector of the Negative.
 

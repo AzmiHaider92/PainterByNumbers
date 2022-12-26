@@ -9,8 +9,8 @@ Given two paintings, my network decides how similar their styles are
 
 
 <p float="left">
-  <img src="photos/n-3861-00-000045-hd.jpg" width="100" />
-  <img src="photos/self-portrait.jpg" /> 
+  <img src="photos/n-3861-00-000045-hd.jpg" height="100" />
+  <img src="photos/self-portrait.jpg" height="100"/> 
 </p>
   
 <img

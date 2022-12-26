@@ -43,7 +43,16 @@ The shared CNN consists of 5 convolutional blocks, each block is followed by a m
   <img src="photos/Picture3.png" width="1000"/>
 </p>
 
+(the architecture figure was drawn with this online tool: http://alexlenail.me/NN-SVG/LeNet.html)
+
+
 # The loss:
 **Triplet loss:**  
-The aim of the triplet loss is to push feature vectors of Anchor and Positive closer to each other pushing them away from the feature vector of the Negative.
+The aim of the triplet loss is to push feature vectors of Anchor and Positive paintings closer to each other pushing them away from the feature vector of the Negative painting.
+
+<p align="center">
+  <img src="photos/tripletloss.png" width="600"/>
+</p>
+
+
 

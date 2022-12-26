@@ -1,4 +1,4 @@
-# PainterByNumber
+# Painter By Numbers
 
 Hello all,
 

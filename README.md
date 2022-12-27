@@ -100,9 +100,9 @@ Number of paintings in the test set: 22237
 # Training Parameters
 
 **Optimizer = Adam with a learning rate=0.0001**  
-**Epochs = 20**  
-**Batch size = 96**  
-**Scheduler = MultiStepLR(optimizer, milestones=[12,16], gamma=0.1)**  
+**Epochs = 50**  
+**Batch size = 32**  
+**Scheduler = MultiStepLR(optimizer, milestones=[11,30], gamma=0.1)**  
 
 **Note: the model was trained on a machine with 1 GPU.**  
 **Number of workers = 8**  

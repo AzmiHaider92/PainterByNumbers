@@ -109,8 +109,10 @@ Number of paintings in the test set: 22237
 **Training took 3 days.**  
 
 
-# Training Results
-**Training and validation:**
+# Training Results  
+
+**Reminder: the validation set are painting whose artists are in the training but the paintings themselves are not.** 
+**Training and validation:**  
 <p align="center">
   <img src="photos/batch2acc.jpg" width="600"/>
 </p>
@@ -119,6 +121,9 @@ Number of paintings in the test set: 22237
 </p>
 
 # Test Results
+
+**Reminder: the test set are painting whose artists are not in the training.** 
+the test set is a proof that the model **extrapolates** new painting styles!  
 
 **Test accuracy - 0.7904487813652307**  
 

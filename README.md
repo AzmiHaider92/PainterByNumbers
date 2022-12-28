@@ -110,8 +110,14 @@ Number of paintings in the test set: 22237
 
 
 # Results
+**Training and validation:**
+<p align="center">
+  <img src="photos/batch2acc.jpg" width="600"/>
+</p>
+<p align="center">
+  <img src="photos/batch2loss.jpg" width="600"/>
+</p>
 
-TODO: add graphs
-
+**Test accuracy = 0.672478581091237**
 
 # Conclusion

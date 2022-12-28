@@ -101,12 +101,12 @@ Number of paintings in the test set: 22237
 
 **Optimizer = Adam with a learning rate=0.0001**  
 **Epochs = 50**  
-**Batch size = 32**  
-**Scheduler = MultiStepLR(optimizer, milestones=[11,30], gamma=0.1)**  
+**Batch size = 8**  
+**Scheduler = MultiStepLR(optimizer, milestones=[11,25,40], gamma=0.1)**  
 
 **Note: the model was trained on a machine with 1 GPU.**  
 **Number of workers = 8**  
-**Training took 50 hours.**  
+**Training took 3 days.**  
 
 
 # Training Results
@@ -130,7 +130,7 @@ Number of paintings in the test set: 22237
 
 Admittedly, the misclassified test samples are really confusing even for the human eye:  
 <p align="center">
-  <img src="photos/testSamplesHardMis.jpg" width="600"/>
+  <img src="photos/testSamplesHardMis.jpg" width="800"/>
 </p>
 
 

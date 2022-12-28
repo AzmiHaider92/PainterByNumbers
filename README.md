@@ -97,7 +97,7 @@ Number of paintings in the test set: 22237
 </p>
 
 
-# Training Parameters
+# HyperParameters
 
 **Optimizer = Adam with a learning rate=0.0001**  
 **Epochs = 50**  
@@ -109,7 +109,7 @@ Number of paintings in the test set: 22237
 **Training took 50 hours.**  
 
 
-# Results
+# Training Results
 **Training and validation:**
 <p align="center">
   <img src="photos/batch2acc.jpg" width="600"/>
@@ -118,12 +118,14 @@ Number of paintings in the test set: 22237
   <img src="photos/batch2loss.jpg" width="600"/>
 </p>
 
+# Test Results
+
 **Test accuracy - 0.7904487813652307**  
 
 **visualizing a couple of test samples:**  
 (the distance between the anchor and the image is in the title - distance between anchor and itself is 0)  
 <p align="center">
-  <img src="photos/testSamples.jpg" width="600"/>
+  <img src="photos/testSamples.jpg" width="800"/>
 </p>
 
 Admittedly, the misclassified test samples are really confusing even for the human eye:  

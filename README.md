@@ -118,6 +118,6 @@ Number of paintings in the test set: 22237
   <img src="photos/batch2loss.jpg" width="600"/>
 </p>
 
-**Test accuracy = 0.672478581091237**
+**Test accuracy - 0.7904487813652307**
 
 # Conclusion

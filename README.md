@@ -85,7 +85,7 @@ A fraction (10%) from training **paintings** was saved for **validation**.
 
 The number of paintings per artist are different and shown below (ordered):  
 <p align="center">
-  <img src="photos/NumberOfPaintingsPerArtist.jpg" width="800"/>
+  <img src="photos/NumberOfPaintingsPerArtist.jpg" width="1000"/>
 </p>
 
   

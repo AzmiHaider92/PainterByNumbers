@@ -146,7 +146,15 @@ Admittedly, the misclassified test samples are really confusing even for the hum
 
 
 # Conclusion
-
-
+TODO; add conlusions
+.
+.
+.
+.
+.
+.
+.
+.
+.
 # You're welcome to checkout my own gallery: https://www.azmihaider.com/art 
 

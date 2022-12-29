@@ -6,8 +6,10 @@ This is my solution to the Kaggle competition PainterByNumbers: https://www.kagg
 
 The goal of the competition is to build a network that learns artists' painting style. 
 
+The network aims to build an organized feature space where paintings are represented by feature vectors; paintings of same artist are clustered (closer in feature space to each other than to different artist's paintings (closer in euclidean distance).  
 Example: left and middle paintings are Van Gogh's, while the right painting is Picasso's.  
-The network generates three feature vectors for the paintings were the first two are closer to each other than to the third.
+In feature space the distance between Van Gogh's paintings is smaller than to the Picasso painting.  
+
 
 <p align="center">
   <img src="photos/n-3861-00-000045-hd.jpg" height="250" />

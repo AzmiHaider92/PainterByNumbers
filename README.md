@@ -114,12 +114,8 @@ Number of paintings in the test set: 22237
 **Reminder: the validation set consists of paintings whose artists are in the training but the paintings themselves are not.**  
 **Training and validation:**  
 
-TODO: ADD the accuracy and loss graphs
 <p align="center">
-  <img src="photos/.jpg" width="600"/>
-</p>
-<p align="center">
-  <img src="photos/.jpg" width="600"/>
+  <img src="photos/training.jpg" width="600"/>
 </p>
 
 # Test Results

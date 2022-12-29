@@ -130,7 +130,7 @@ Random transformations used to augment:
 **Reminder: the test set consists of paintings whose artists are not in the training.** 
 the test set is a proof that the model **extrapolates** new painting styles!  
 
-**Test accuracy - 0.7904487813652307**  
+**Test accuracy = 0.805421950153039**  
 
 **visualizing a couple of test samples:**  
 (the distance between the anchor and the image is in the title - distance between anchor and itself is 0)  

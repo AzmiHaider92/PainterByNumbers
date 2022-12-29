@@ -146,3 +146,7 @@ Admittedly, the misclassified test samples are really confusing even for the hum
 
 
 # Conclusion
+
+
+# You're welcome to checkout my own amateur artists gallery: 
+https://www.azmihaider.com/art

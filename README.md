@@ -85,7 +85,7 @@ A fraction (10%) from training **paintings** was saved for **validation**.
 
 The number of paintings per artist are different and shown below (ordered):  
 <p align="center">
-  <img src="photos/NumberOfPaintingsPerArtist.jpg" width="1000"/>
+  <img src="photos/NumberOfPaintingsPerArtist.jpg" width="800"/>
 </p>
 
   
@@ -95,7 +95,7 @@ Number of paintings in the test set: 22237
 
 **A triplet sample from training:**  
 <p align="center">
-  <img src="photos/sample.jpg" width="600"/>
+  <img src="photos/sample.jpg" width="900"/>
 </p>
 
 

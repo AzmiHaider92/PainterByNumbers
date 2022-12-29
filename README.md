@@ -106,7 +106,14 @@ Number of paintings in the test set: 22237
 
 **Note: the model was trained on a machine with 1 GPU.**  
 **Number of workers = 8**  
-**Training took 3 days.**  
+
+Images were center cropped to size 256x256.  
+Random transformations used to augment:  
+-RandomAffine (degrees=(0, 0), translate=(0.2, 0.2), scale=(1.2, 1.2))  
+-RandomVerticalFlip (p=0.5)  
+-RandomRotation (degrees=(0, 180))  
+-RandomHorizontalFlip (p=0.5)  
+
 
 
 # Training Results  

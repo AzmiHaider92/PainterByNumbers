@@ -31,7 +31,7 @@ The triplet loss (explained in loss section) is then calculated on the three fea
 The final result of the network is a feature space where feature vectors of paintings of same artist are closer to each other while feature vectors of paintings of different artists are pushed away.  
 
 <p align="center">
-  <img src="photos/0_SszXblCjQOPiLhjZ.png" width="600"/>
+  <img src="photos/0_SszXblCjQOPiLhjZ.png" width="800"/>
 </p>
 
   
@@ -95,7 +95,7 @@ Number of paintings in the test set: 22237
 
 **A triplet sample from training:**  
 <p align="center">
-  <img src="photos/sample.jpg" width="900"/>
+  <img src="photos/sample.jpg" width="800"/>
 </p>
 
 

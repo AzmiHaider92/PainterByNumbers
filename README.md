@@ -58,9 +58,9 @@ The shared CNN consists of 5 convolutional blocks, each block is followed by a m
 
 Cosider 3 inputs: Anchor, Positive and Negative. Where Anchor and Positive are paintings of the same artist, and negative is a painting of a different artist.  
 <p align="center">
-  <img src="photos/anchor.png" width="300"/>
-  <img src="photos/positive.png" width="300"/>
-  <img src="photos/negative.png" width="300"/>
+  <img src="photos/anchor.png" width="100"/>
+  <img src="photos/positive.png" width="100"/>
+  <img src="photos/negative.png" width="100"/>
 </p>
 
 **Triplet loss:**  

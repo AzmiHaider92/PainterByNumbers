@@ -55,6 +55,14 @@ The shared CNN consists of 5 convolutional blocks, each block is followed by a m
   
   
 # The loss:
+
+Cosider 3 inputs: Anchor, Positive and Negative. Where Anchor and Positive are paintings of the same artist, and negative is a painting of a different artist.  
+<p align="center">
+  <img src="photos/anchor.png" width="300"/>
+  <img src="photos/positive.png" width="300"/>
+  <img src="photos/negative.png" width="300"/>
+</p>
+
 **Triplet loss:**  
 The aim of the triplet loss is to push feature vectors of Anchor and Positive paintings closer to each other pushing them away from the feature vector of the Negative painting. (A default margin=2).
 

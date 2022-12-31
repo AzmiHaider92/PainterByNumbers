@@ -22,9 +22,9 @@ In feature space the distance between Van Gogh's paintings is smaller than to th
 # Approach: Siamese CNN network with triplet loss
 Siamese CNN consists of three Convolutional Neural Networks where **weights are shared** between the CNNs.  
 First input goes through the CNN to produce a feature vector, then the second and the third go throught the **same** CNN.    
-The fist image we term Anchor, it's a painting which belongs to artist1.     
-The second image we term Positive, it's a **different** painting of the **same** artist1.  
-The third image we term Negative is a painting of a **different** artist2.    
+The fist image -we term Anchor- is a painting which belongs to artist1.     
+The second image -we term Positive- is a **different** painting of the **same** artist1.  
+The third image -we term Negative- is a painting of a **different** artist2.    
 **Note: The two artists and paintings in each step are all randomly chosen.**  
 
 The triplet loss (explained in loss section) is then calculated on the three feature vectors produced and gradients are calculated aon shared weights.  

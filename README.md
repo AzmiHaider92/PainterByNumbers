@@ -109,8 +109,8 @@ Number of paintings in the test set: 22237
 
 # HyperParameters
 
-**Optimizer = Adam with a learning rate=0.0001**  
-**Epochs = 50**  
+**Optimizer = Adam with a learning rate=0.001**  
+**Epochs = 60**  
 **miniBatch size = 4**  
 **Scheduler = MultiStepLR(optimizer, milestones=[11,25,40], gamma=0.1)**  
 
@@ -129,7 +129,9 @@ Random transformations used to augment:
 # Training Results  
 
 **Reminder: the validation set consists of paintings whose artists are in the training but the paintings themselves are not.**  
-**Training and validation:**  
+**Training and validation:**   
+
+Training accuracy =~ 90%.  
 
 <p align="center">
   <img src="photos/batch4acc.jpg" width="600"/>
@@ -141,7 +143,7 @@ Random transformations used to augment:
 **Reminder: the test set consists of paintings whose artists are not in the training.** 
 the test set is a proof that the model **extrapolates** new painting styles!  
 
-**Test accuracy = 0.805421950153039**  
+**Test accuracy - 0.8928057553956834**  
 
 **visualizing a couple of test samples:**  
 (the distance between the anchor and the image is in the title - distance between anchor and itself is 0)  

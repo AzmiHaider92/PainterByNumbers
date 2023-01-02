@@ -132,7 +132,8 @@ Random transformations used to augment:
 **Training and validation:**  
 
 <p align="center">
-  <img src="photos/training.jpg" width="600"/>
+  <img src="photos/batch4acc.jpg" width="600"/>
+  <img src="photos/batch4loss.jpg" width="600"/>
 </p>
 
 # Test Results

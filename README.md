@@ -27,8 +27,8 @@ The second image -we term Positive- is a **different** painting of the **same** 
 The third image -we term Negative- is a painting of a **different** artist2.    
 **Note: The two artists and paintings in each step are all randomly chosen.**  
 
-The triplet loss (explained in loss section) is then calculated on the three feature vectors produced and gradients are calculated aon shared weights.  
-The final result of the network is a feature space where feature vectors of paintings of same artist are closer to each other while feature vectors of paintings of different artists are pushed away.  
+The triplet loss (explained in loss section) is then calculated on the three feature vectors produced and gradients are calculated on the shared weights.  
+The final result of the network is an organized feature space: each painting image is mapped (through the network) to a feature vector Dx1; feature vectors of paintings of same artist are clustered together and are pushed away from clusters of different artists.  
 
 <p align="center">
   <img src="photos/0_SszXblCjQOPiLhjZ.png" width="600"/>
@@ -36,7 +36,7 @@ The final result of the network is a feature space where feature vectors of pain
 
   
   
-**Contrastive network**: We've also exprimented with two CNNs (instead of three, still with **shared weight** between the two CNNs). For this, a contrastive loss was used. In this network, two paintings and a label are given and the goal is to push their feature vectors closer if the label=0 (paintings are from the same artist) or push their feature vectors away from each other incase the label=1 (paintings are from different artists).   
+**Contrastive network**: We've also exprimented with two CNNs (instead of three, still with **shared weight** between the two CNNs). For this, a contrastive loss was used. In this network, two paintings and a label are given; The goal is to push their feature vectors closer if the label=0 (paintings are from the same artist) or push their feature vectors away from each other incase the label=1 (paintings are from different artists).   
 In each step, we first randomly choose label=(0,1) and then randomly choose paintings based on the label (if label=0 we randomly choose an artist, then randomly choose two of his paintings. If label=1, we randomly choose 2 artits and randomly choose a painting of each of them). The label is saved with the pair (see contrastive loss below).  
 
   

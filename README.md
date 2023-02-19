@@ -71,11 +71,10 @@ The aim of the triplet loss is to push feature vectors of Anchor and Positive pa
   <img src="photos/tripletloss.jpg" width="600"/>
 </p>
 
-The loss aims to be zero (Ideally); to achieve this: D(A,P) - D(A,N) needs to become smaller than -margin (this forces the term is the max to be zero).  
-Meaning:  
+The loss aims to be zero (Ideally); to achieve this: D(A,P) - D(A,N) needs to become smaller than -margin (this forces the term is the max to be zero). Meaning:    
 * D(A,P) aims to become small (this is the distance between Anchor and Positive).  
 * D(A,N) aims to become large (this is the distance between Anchor and Negative).  
-* the distance between both distances fulfils the term: D(A,P) - D(A,N) < -margin.  
+* Both distances keep updating until they fulfill the term: D(A,P) - D(A,N) < -margin.  
 
 
 **Contrastive loss:**  

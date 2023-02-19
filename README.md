@@ -84,10 +84,11 @@ As mentioned above, We've expiremented with a two CNN arhictecture where only tw
   <img src="photos/Contrastiveloss.jpg" width="700"/>
 </p>
 
-The contrastive loss is similar to the triplet, but it only does one of the other at each given time:  
-It either pushes the two feature vectors closer if the label Y=0:  
+The contrastive loss is similar to the triplet, but it only does one of the other at each given time. It either:  
+pushes the two feature vectors closer if the label Y=0:    
 * Same painter
 * The right side of the equation is zero; left side is the distance between the feature vectors which we aim to minimize in order to minimize the loss.   
+  
 pushes the two feature vectors farther if the label Y=1:
 * different painter  
 * the left side of the equation is zero; the right side pushes the distance to be larger than the given margin in order to zero the term inside the max. Hence, to minimize the loss, we need to maximize the distance between the feature vectors. 

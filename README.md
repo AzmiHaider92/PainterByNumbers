@@ -74,14 +74,24 @@ The aim of the triplet loss is to push feature vectors of Anchor and Positive pa
 The loss aims to be zero (Ideally); to achieve this: D(A,P) - D(A,N) needs to become smaller than -margin (this forces the term is the max to be zero). Meaning:    
 * D(A,P) aims to become small (this is the distance between Anchor and Positive).  
 * D(A,N) aims to become large (this is the distance between Anchor and Negative).  
-* Both distances keep updating until they fulfill the term: D(A,P) - D(A,N) < -margin.  
+* Both distances keep updating until they fulfill the term: D(A,P) - D(A,N) < -margin.
+The margin forces clusters of painters to be far away from each other to a certain extent. The larger the margin the more the network forces the clusters to be farther. 
 
 
 **Contrastive loss:**  
-As mentioned above, We've expiremented with a two CNN arhictecture where only two paintings and a label Y are handled. The aim is to push their feature vectors closer if the label Y=0 or push them apart if Y=1.
+As mentioned above, We've expiremented with a two CNN arhictecture where only two paintings and a label Y are handled.  
 <p align="center">
   <img src="photos/Contrastiveloss.jpg" width="700"/>
 </p>
+
+The contrastive loss is similar to the triplet, but it only does one of the other at each given time:  
+It either pushes the two feature vectors closer if the label Y=0:  
+* Same painter
+* The right side of the equation is zero; left side is the distance between the feature vectors which we aim to minimize in order to minimize the loss.   
+pushes the two feature vectors farther if the label Y=1:
+* different painter  
+* the left side of the equation is zero; the right side pushes the distance to be larger than the given margin in order to zero the term inside the max. Hence, to minimize the loss, we need to maximize the distance between the feature vectors. 
+
 
 **Notes:**  
 **D, Dw = Euclidean distance.**  

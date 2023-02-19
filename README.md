@@ -176,15 +176,15 @@ Admittedly, the misclassified test samples are really confusing even for the hum
 
 
 # Conclusion
-TODO; add conlusions  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
-.  
+
+
+# Resources
+* https://www.kaggle.com/c/painter-by-numbers  
+* https://towardsdatascience.com/a-friendly-introduction-to-siamese-networks-85ab17522942  
+* https://towardsdatascience.com/how-to-train-your-siamese-neural-network-4c6da3259463  
+* https://github.com/AceEviliano/Siamese-network-on-MNIST-PyTorch/blob/master/Siamese/Siamese%20Net.ipynb  
+* https://www.kaggle.com/code/hirotaka0122/triplet-loss-with-pytorch/notebook  
+
+
 # You're welcome to checkout my own art gallery: https://www.azmihaider.com/art 
 

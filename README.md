@@ -176,7 +176,8 @@ Admittedly, the misclassified test samples are really confusing even for the hum
 
 
 # Conclusion
-* Based on the results of the experiment, we conclude that siamese networks are great for extrapolating features from artworks even with small number of samples for each painter (class). This is largly due to the fact that the network is not being fit to specific class, but rather learning which features are important (and should be considered) when comparing paintings of two painters in order to distinguish an artist's unique painting style.  
+* Based on the results of the experiment, we conclude that siamese networks are great for extrapolating features from artworks even with small number of samples for each painter (class). This is largly due to the fact that the network is not being fit to specific classes, but rather learning which features are important (and should be considered) when comparing paintings of two painters in order to distinguish an artist's unique painting style.
+* Metric learning like siamese networks enables extrapolation to unseen classes (new painters in our case). Not even one sample (painting) of these classes (painters) are seen during the training process.    
 * We implemented two approaches to deal with building the feature space for the paintings. Both of them can be used in our code by turning a simple flag in the code: **pair_triplet = True/False ( False = two nets, contrastive loss ; True = Three nets, Triplet loss)**.
 
 
@@ -189,5 +190,6 @@ Admittedly, the misclassified test samples are really confusing even for the hum
 * https://www.kaggle.com/code/hirotaka0122/triplet-loss-with-pytorch/notebook  
 
 
-# You're welcome to checkout my own art gallery: https://www.azmihaider.com/art 
+# You're welcome to checkout my own art gallery:   
+**https://www.azmihaider.com/art** 
 

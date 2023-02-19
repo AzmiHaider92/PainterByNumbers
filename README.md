@@ -44,7 +44,8 @@ In each step, we first randomly choose label=(0,1) and then randomly choose pain
 
 # The architechture
 The input image is of size 256x256x3.  
-The shared CNN consists of 5 convolutional blocks, each block is followed by a maxpool(2) - the sizes of the images after each block is shown below. The number of conv2d in each block is marked below each block in conv2d-xN. Each conv2d is followed by a BatchNorm and a Relu activation. The output feature vector is of size 2048.
+The shared CNN consists of 5 convolutional blocks - the sizes of the images after each block is shown below. Inside each block there are 2-3 conv layers (preserving the size) ; conv2d layers are followed by a BatchNorm and a Relu activation. Each block is followed by a maxpool(2).  
+**The output feature vector is of size 2048**.
 
 <p align="center">
   <img src="photos/Picture3.png" width="1000"/>

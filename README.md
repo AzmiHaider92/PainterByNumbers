@@ -160,7 +160,14 @@ Training accuracy =~ 90%.
 **Reminder: the test set consists of paintings whose artists are not in the training.** 
 the test set is a proof that the model **extrapolates** new painting styles!  
 
-**Test accuracy - 0.8928057553956834**  
+**Test accuracy - 0.8928057553956834** (in the same way the training accuracy was calculated)
+
+We add the ROC - tested with multiple thresholds from 0 to 10 (jumps of 0.1).
+
+<p align="center">
+  <img src="photos/ROC.png" width="600"/>
+</p>
+
 
 **visualizing a couple of test samples:**  
 (the distance between the anchor and the image is in the title - distance between anchor and itself is 0)  
